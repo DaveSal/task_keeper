@@ -1,4 +1,4 @@
-class API::V1::NotesController < API::V1::BaseController
+class Api::V1::NotesController < Api::V1::BaseController
   def index
     respond_with Note.all
   end
