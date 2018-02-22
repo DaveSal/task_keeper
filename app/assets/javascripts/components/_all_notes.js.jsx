@@ -10,7 +10,7 @@ var AllNotes = createReactClass({
   render() {
     var notes = this.props.notes.map((note) => {
       return (
-        <div key={ note.id }>
+        <div key={ note.id } className="col-sm-2 col-xs-8 note">
           <Note note={ note }
                 handleUpdate={ this.onUpdate }
                 handleDelete={ this.handleDelete.bind(this, note.id) } />
@@ -19,8 +19,8 @@ var AllNotes = createReactClass({
     })
 
     return (
-      <div>
-          { notes.reverse() }
+      <div className="row">
+        { notes.reverse() }
       </div>
     )
   }

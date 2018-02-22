@@ -51,7 +51,9 @@ var Body = createReactClass({
   render() {
     return (
       <div>
+        <h3>Новая задача</h3>
         <NewNote handleSubmit={ this.handleSubmit }/>
+        <h3>Все задачи</h3>
         <AllNotes notes={ this.state.notes } handleDelete={ this.handleDelete } onUpdate={ this.handleUpdate }/>
       </div>
     )

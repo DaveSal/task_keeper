@@ -4,7 +4,7 @@ require 'rails/all'
 
 Bundler.require(*Rails.groups)
 
-module NoteKeeper
+module TaskKeeper
   class Application < Rails::Application
   end
 end
